@@ -217,7 +217,7 @@ h1,h2,h3,h4,.hero-title,.section-title,.footer-title{font-family:var(--site-seri
 <a class="feature-card" href="projects/meta-x-quattro-bistro/index.html"><img alt="Meta X Quattro Bistro — Meta" loading="lazy" src="projects/meta-x-quattro-bistro/assets/hero.jpeg"/><div class="overlay"><h3>Meta X Quattro Bistro</h3><p>Meta · Lonavala, India</p></div></a>
 <a class="feature-card" href="projects/gf-piping-systems/index.html"><img alt="GF Piping Systems — Corporate Film" loading="lazy" src="projects/gf-piping-systems/assets/hero.jpeg"/><div class="overlay"><h3>GF Piping Systems</h3><p>Corporate Film · India</p></div></a>
 <a class="feature-card" href="projects/sp-global/index.html"><img alt="S&amp;P Global — Corporate Film" loading="lazy" src="projects/sp-global/assets/hero.jpeg"/><div class="overlay"><h3>S&amp;P Global</h3><p>Corporate Film · Mumbai, India</p></div></a>
-</div></section><section id="archive"><div class="filters"><button class="filter active" data-filter="all">All Work</button><button class="filter" data-filter="editorial">Editorial &amp; Journalism</button><button class="filter" data-filter="feature">Feature Films</button><button class="filter" data-filter="branded">Branded Content</button><button class="filter" data-filter="corporate">Corporate Films</button><button class="filter" data-filter="food">Food &amp; Business</button><button class="filter" data-filter="arts">Arts &amp; Culture</button><button class="filter" data-filter="health">Health &amp; Sports</button><button class="filter" data-filter="environment">Waste &amp; Economy</button><button class="filter" data-filter="originals">Originals</button></div><div class="archive-head"><div><div class="eyebrow">The archive</div><h2>All work</h2></div><div class="count" id="count"></div></div><div class="grid" id="grid"></div></section><footer><div><div class="eyebrow" style="color:#aaa79f">Prakhar Deep Jain</div><div class="footer-title">Have a story to tell?</div></div><div class="footer-links"><a href="mailto:prakhargun@gmail.com">Email</a><a href="https://wa.me/919479473239">WhatsApp</a><a href="../index.html">Back home</a>
+</div></section><section id="archive"><div class="filters"><button class="filter active" data-filter="all">All Work</button><button class="filter" data-filter="feature">Feature Films</button><button class="filter" data-filter="branded">Branded Content</button><button class="filter" data-filter="corporate">Corporate Films</button><button class="filter" data-filter="food">Food &amp; Business</button><button class="filter" data-filter="arts">Arts &amp; Culture</button><button class="filter" data-filter="health">Health &amp; Sports</button><button class="filter" data-filter="environment">Waste &amp; Economy</button><button class="filter" data-filter="originals">Originals</button></div><div class="archive-head"><div><div class="eyebrow">The archive</div><h2>All work</h2></div><div class="count" id="count"></div></div><div class="grid" id="grid"></div></section><footer><div><div class="eyebrow" style="color:#aaa79f">Prakhar Deep Jain</div><div class="footer-title">Have a story to tell?</div></div><div class="footer-links"><a href="mailto:prakhargun@gmail.com">Email</a><a href="https://wa.me/919479473239">WhatsApp</a><a href="../index.html">Back home</a>
 <a class="case-study-link" href="projects/cockroach-janta-party/index.html">View Project →</a>
 <a class="case-study-link" href="projects/gf-piping-systems/index.html">View Project →</a>
 <a class="case-study-link" href="projects/sp-global/index.html">View Project →</a>
@@ -228,7 +228,6 @@ const grid=document.getElementById('grid'),count=document.getElementById('count'
 function esc(s){return String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));}
 const FILTER_MAP={
   all:null,
-  editorial:[],
   feature:['feature'],
   branded:['branded'],
   corporate:['corporate'],
@@ -248,7 +247,7 @@ document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{
 if(location.protocol==='file:'){
   render();
 }else{
-  fetch('projects.json')
+  fetch('projects.json?v=20260919')
     .then(r=>{if(!r.ok) throw new Error('Unable to load projects.json'); return r.json();})
     .then(data=>{projects=data; render();})
     .catch(()=>{render();});

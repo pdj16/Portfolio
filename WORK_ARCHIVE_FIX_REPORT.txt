@@ -1,0 +1,6 @@
+WORK ARCHIVE FIX REPORT
+
+Changes in this revision:
+- Removed the empty “Editorial & Journalism” filter from Work Archive.
+- Removed the unused editorial filter mapping from the Work Archive JavaScript.
+- Preserved all existing projects, categories, Waste & Economy fix, design, images, and SEO changes.
