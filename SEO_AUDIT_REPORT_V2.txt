@@ -1,0 +1,25 @@
+PRAKHAR DEEP JAIN — SEO V2 AUDIT
+
+Pages audited: 14
+Changes applied: 15
+Audit issues: 0
+
+INVISIBLE SEO CHANGES:
+- BreadcrumbList schema: about/index.html
+- BreadcrumbList schema: contact/index.html
+- BreadcrumbList schema: field-notes/index.html
+- Article schema: field-notes/index.html
+- BreadcrumbList schema: filming-in-india/index.html
+- WebSite schema: index.html
+- BreadcrumbList schema: services/index.html
+- BreadcrumbList schema: work/index.html
+- BreadcrumbList schema: work/projects/cockroach-janta-party/index.html
+- BreadcrumbList schema: work/projects/gf-piping-systems/index.html
+- BreadcrumbList schema: work/projects/inside-everest/index.html
+- BreadcrumbList schema: work/projects/meta-x-quattro-bistro/index.html
+- BreadcrumbList schema: work/projects/sp-global/index.html
+- BreadcrumbList schema: work/projects/the-age-of-astrology/index.html
+- BreadcrumbList schema: work/projects/the-feni-story/index.html
+
+AUDIT ISSUES:
+- None detected.
